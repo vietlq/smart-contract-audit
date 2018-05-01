@@ -1,0 +1,122 @@
+==== Integer Overflow  ====
+Type: Warning
+Contract: StandardToken
+Function name: transferFrom(address,address,uint256)
+PC address: 2230
+A possible integer overflow exists in the function `transferFrom(address,address,uint256)`.
+The addition or multiplication may result in a value higher than the maximum representable integer.
+--------------------
+In file: proxyOverflow.sol:145
+
+balances[_to] + _value
+
+--------------------
+
+DEBUGGING INFORMATION:
+
+storage_keccac_1461501637330902918203684832716283019655932542975_&
+1461501637330902918203684832716283019655932542975_&
+1461501637330902918203684832716283019655932542975_&
+calldata_StandardToken_32_+_4: 0xe988d8b1c1202eb4ac0c7fb5ce7dc0ef7fbccfb17d3d69a5fdf9d4ab9f784bba
+storage_keccac_1461501637330902918203684832716283019655932542975_&
+1461501637330902918203684832716283019655932542975_&
+1461501637330902918203684832716283019655932542975_&
+calldata_StandardToken_4: 0xe2332fafdf6e76d070b7f8feb9fff3febf07435006000003e000002208f200f3
+calldata_StandardToken_32 + 36: 0xd226671d504e38a8939560310effe40e7b0027388132003fc10010e1b06363b1
+storage_keccac_1461501637330902918203684832716283019655932542975_&
+1461501637330902918203684832716283019655932542975_&
+caller: 0xd226671d504e38a8939560310effe40e7b0027388132003fc10010e1b06363b1
+storage_2: 0xff00
+calldata_StandardToken_0: 0x23b872dd00000000000000000000000000000000000000000000000000000000
+calldatasize_StandardToken: 0x4
+callvalue: 0x0
+
+--------------------
+
+==== Integer Overflow  ====
+Type: Warning
+Contract: StandardToken
+Function name: transfer(address,uint256)
+PC address: 4697
+A possible integer overflow exists in the function `transfer(address,uint256)`.
+The addition or multiplication may result in a value higher than the maximum representable integer.
+--------------------
+In file: proxyOverflow.sol:135
+
+balances[_to] + _value
+
+--------------------
+
+DEBUGGING INFORMATION:
+
+storage_keccac_1461501637330902918203684832716283019655932542975_&
+1461501637330902918203684832716283019655932542975_&
+caller: 0xbef9f5f0fb4bfffffeefffffb3bdda98fffffffe0000000000000f401fff00af
+storage_keccac_1461501637330902918203684832716283019655932542975_&
+1461501637330902918203684832716283019655932542975_&
+1461501637330902918203684832716283019655932542975_&
+calldata_StandardToken_4: 0xc00001000046fde466178fd9fe82c000c0000002880067ffffe8e113f7ac0459
+calldata_StandardToken_32 + 4: 0xbbedf1e1bb1bfffffddfffd8c03db01afffffffa6800280000031e803c0e001f
+storage_2: 0xff00
+calldata_StandardToken_0: 0xa9059cbb00000000000000000000000000000000000000000000000000000000
+calldatasize_StandardToken: 0x4
+callvalue: 0x0
+
+--------------------
+
+==== Exception state ====
+Type: Informational
+Contract: StandardToken
+Function name: transferFrom(address,address,uint256)
+PC address: 1780
+A reachable exception (opcode 0xfe) has been detected. This can be caused by type errors, division by zero, out-of-bounds array access, or assert violations. This is acceptable in most situations. Note however that `assert()` should only be used to check invariants. Use `require()` for regular input checking. 
+--------------------
+In file: proxyOverflow.sol:118
+
+assert(transferEnabled)
+
+--------------------
+
+DEBUGGING INFORMATION:
+
+The exception is triggered under the following conditions:
+
+storage_2: 0x0
+storage_keccac_1461501637330902918203684832716283019655932542975_&
+1461501637330902918203684832716283019655932542975_&
+1461501637330902918203684832716283019655932542975_&
+calldata_StandardToken_4: 0x0
+calldata_StandardToken_0: 0x23b872dd00000000000000000000000000000000000000000000000000000000
+calldatasize_StandardToken: 0x4
+callvalue: 0x0
+
+--------------------
+
+==== Exception state ====
+Type: Informational
+Contract: StandardToken
+Function name: transfer(address,uint256)
+PC address: 4383
+A reachable exception (opcode 0xfe) has been detected. This can be caused by type errors, division by zero, out-of-bounds array access, or assert violations. This is acceptable in most situations. Note however that `assert()` should only be used to check invariants. Use `require()` for regular input checking. 
+--------------------
+In file: proxyOverflow.sol:118
+
+assert(transferEnabled)
+
+--------------------
+
+DEBUGGING INFORMATION:
+
+The exception is triggered under the following conditions:
+
+storage_2: 0x0
+storage_keccac_1461501637330902918203684832716283019655932542975_&
+1461501637330902918203684832716283019655932542975_&
+caller: 0x0
+calldata_StandardToken_0: 0xa9059cbb00000000000000000000000000000000000000000000000000000000
+calldatasize_StandardToken: 0x4
+callvalue: 0x0
+
+--------------------
+
+
