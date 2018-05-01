@@ -1,0 +1,49 @@
+myth -x assertions.sol --verbose-report
+==== Exception state ====
+Type: Informational
+Contract: Assertions
+Function name: assertion1(uint256)
+PC address: 209
+A reachable exception (opcode 0xfe) has been detected. This can be caused by type errors, division by zero, out-of-bounds array access, or assert violations. This is acceptable in most situations. Note however that `assert()` should only be used to check invariants. Use `require()` for regular input checking. 
+--------------------
+In file: assertions.sol:4
+
+assert (input * 4 < 1024)
+
+--------------------
+
+DEBUGGING INFORMATION:
+
+The exception is triggered under the following conditions:
+
+calldata_Assertions_4: 0x200
+calldata_Assertions_0: 0xe166a66300000000000000000000000000000000000000000000000000000000
+calldatasize_Assertions: 0x4
+callvalue: 0x0
+
+--------------------
+
+==== Integer Overflow  ====
+Type: Warning
+Contract: Assertions
+Function name: assertion1(uint256)
+PC address: 202
+A possible integer overflow exists in the function `assertion1(uint256)`.
+The addition or multiplication may result in a value higher than the maximum representable integer.
+--------------------
+In file: assertions.sol:4
+
+input * 4
+
+--------------------
+
+DEBUGGING INFORMATION:
+
+calldata_Assertions_4: 0x4000000000000000000000000000000000000000000000000000000000000000
+calldata_Assertions_0: 0xe166a66300000000000000000000000000000000000000000000000000000000
+calldatasize_Assertions: 0x4
+callvalue: 0x0
+
+--------------------
+
+
