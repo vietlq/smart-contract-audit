@@ -10,3 +10,5 @@
 * Solium
 * Flint
 * Oyente
+* Securify.ch
+* Remix
