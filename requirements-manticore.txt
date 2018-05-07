@@ -1,0 +1,7 @@
+capstone==3.0.5rc2
+manticore==0.1.9
+ply==3.11
+pyelftools==0.24
+pysha3==1.0.2
+unicorn==1.0.1
+z3-solver==4.5.1.0.post2
