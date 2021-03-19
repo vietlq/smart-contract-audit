@@ -21,7 +21,7 @@ ethereum==2.3.1
 future==0.16.0
 hexbytes==0.1.0
 idna==2.6
-Jinja2==2.10
+Jinja2==2.11.3
 laser-ethereum==0.16.0
 MarkupSafe==1.0
 more-itertools==4.1.0
