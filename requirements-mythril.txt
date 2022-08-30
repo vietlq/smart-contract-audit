@@ -10,7 +10,7 @@ coverage==4.5.1
 cytoolz==0.9.0.1
 dictionaries==0.0.1
 eth-abi==1.0.0
-eth-account==0.2.2
+eth-account==0.5.9
 eth-hash==0.1.2
 eth-keyfile==0.5.1
 eth-keys==0.2.0b3
