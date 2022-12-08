@@ -2,7 +2,7 @@ asn1crypto==0.24.0
 attrdict==2.0.0
 attrs==17.4.0
 BTrees==4.5.0
-certifi==2018.4.16
+certifi==2022.12.7
 cffi==1.11.5
 chardet==3.0.4
 coincurve==7.1.0
