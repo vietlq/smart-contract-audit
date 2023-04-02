@@ -13,6 +13,7 @@
 * Oyente
 * Securify.ch
 * Remix
+* Solidcheck
 
 ## Test coverage
 
